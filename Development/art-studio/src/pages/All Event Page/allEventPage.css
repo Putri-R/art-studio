@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+.event-group img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.event-group img:hover{
+    filter: brightness(70%);
+    transition: 0.2s;
+}
+
+h2{
+    color: #000;
+    text-align: center;
+    font-family: 'Fredoka';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 78px 0px;
+}
+
+h2 span{
+    color: #F3B618;
+}
+
+.allevent-group{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1124px;
+    margin-bottom: 400px;
+}
+
+.event-group{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.event-group p {
+    color: #5E5C5C;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.event-group .date{
+    color: #B5B5B5;
+    font-family: 'Nokora';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.event-group a{
+    font-family: 'Nokora';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 8px;
+    pointer-events: auto;
+    text-decoration: none;
+    color: #000;
+}
+
+.event-group a:hover{
+    color: #f0aa05;
+}
