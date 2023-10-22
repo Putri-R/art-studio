@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+.hero_group{
+    margin-top: 20px;
+}
+
+.hero_group h1{
+    font-family: 'Nokora';
+    font-size: 60px;
+    font-weight: 700;
+    width: 605px;
+}
+
+.hero_group h1 span{
+    text-decoration: underline #E4B700;
+}
+
+.hero_group p {
+    color: #A5A5A5;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 605px;
+}
+
+.hero-button{
+    padding: 14px 38px;
+    border-radius: 40px;
+    border: none;
+    background: #FC0;
+    text-align: center;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 400;
+    pointer-events: auto;
+    margin-top: 0px;
+}
+
+.hero-button:hover{
+    background: #E4B700;
+}
