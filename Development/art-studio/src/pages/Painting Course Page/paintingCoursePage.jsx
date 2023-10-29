@@ -30,7 +30,7 @@ Whether you're drawn to the raw intensity of Expressionism or the precision of N
         <>
             
             <div className= "painting-course">
-                <h2><span>Dance</span> Course</h2>
+                <h2><span>Painting</span> Course</h2>
                 <p>Unleash Your Inner Artist</p>
                 <img src={painting_img} alt="" />
 
