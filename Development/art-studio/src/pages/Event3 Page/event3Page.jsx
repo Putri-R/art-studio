@@ -1,5 +1,5 @@
-// import Navigasi from '../components/Navigasi/navigasi';
-// import Footer from '../components/Footer/footer';
+import Navigasi from '../components/Navigasi/navigasi';
+import Footer from '../components/Footer/footer';
 import event3_img from './asset/event3_img.png'
 import Markdown from 'react-markdown';
 import './event3Page.css';
@@ -20,8 +20,8 @@ Ava's win in the painting competition will undoubtedly serve as an inspiration t
 
     return(
         <>
-            {/* <Navigasi/> */}
-            <div className= "event2">
+            <Navigasi/>
+            <div className= "event3">
                 <h2>Award in <span>Painting Competition</span></h2>
                 <div className="date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22" fill="none">
@@ -42,7 +42,7 @@ Ava's win in the painting competition will undoubtedly serve as an inspiration t
                     <Markdown>{markdownContent}</Markdown>
                 </div>
             </div>
-            {/* <Footer/> */}
+            <Footer/>
         </>
     )
 }
