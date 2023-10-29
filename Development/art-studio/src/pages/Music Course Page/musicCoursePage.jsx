@@ -25,7 +25,7 @@ In conclusion, music courses for instruments like drums and guitars offer indivi
         <>
             
             <div className= "music-course">
-                <h2><span>Dance</span> Course</h2>
+                <h2><span>Music</span> Course</h2>
                 <p>Discover the Rhythms of Music: Guitar and Drum</p>
                 <img src={music_img} alt="" />
 
