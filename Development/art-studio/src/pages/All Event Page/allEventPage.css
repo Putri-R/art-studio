@@ -72,3 +72,34 @@ h2 span{
 .event-group a:hover{
     color: #f0aa05;
 }
+
+@media (max-width: 415px){
+    .event-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .event-group div{
+        text-align: center;
+    }
+
+    .allevent-group{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 200px;
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 416px) and (max-width: 885px){
+
+    .allevent-group{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 200px;
+        max-width: 640px;
+    }
+}
