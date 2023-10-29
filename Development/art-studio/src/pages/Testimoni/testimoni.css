@@ -73,7 +73,7 @@
     line-height: 30px;
 }
 
-@media (max-width: 844px){
+@media (max-width: 415px){
     .testimony-item{
         width: 400px;
         margin: 40px;
@@ -82,9 +82,14 @@
     .testimony-group h2{
         margin-bottom: 0px;
     }
+
+    .testimony-group {
+        width: 90%;
+        margin-left: 20px;
+    }
 }
 
-@media (max-width: 1200px){
+@media (min-width: 416px) and (max-width: 885px){
     .testimony-item{
         width: 906px;
         margin: 40px;
