@@ -35,7 +35,7 @@
     font-weight: 700;
 }
 
-.date p{
+.event1 .date p{
     margin-top: 20px;
 }
 
@@ -43,10 +43,10 @@
     margin: 66px 0px;
 }
 
-.markdown-container{
+.markdown-container p{
     color: #5a5a5a;
     font-family: 'Nokora';
-    font-size: 16px;
+    font-size: 17px;
     line-height: 30px;
     margin: 0 auto;
     max-width: 993px;
@@ -54,7 +54,6 @@
 
 .markdown-container strong {
     color: rgba(228, 151, 0, 1);
-    font-size: 17px;
 }
 
 @media (max-width: 415px){

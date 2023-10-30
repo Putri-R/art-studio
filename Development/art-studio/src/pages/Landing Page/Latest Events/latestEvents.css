@@ -46,6 +46,8 @@ h2 span{
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
+    text-align: left;
+    margin-top: 5px;
 }
 
 .event-group .date{
@@ -100,6 +102,10 @@ button:hover{
     }
 
     .event-group div{
+        text-align: center;
+    }
+
+    .event-group p{
         text-align: center;
     }
 
