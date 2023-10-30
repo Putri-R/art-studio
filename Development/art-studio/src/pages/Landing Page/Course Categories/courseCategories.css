@@ -81,3 +81,38 @@
 button:hover{
     background: #E4B700;
 }
+
+@media (max-width: 430px){
+    .coursecategories-group{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .course-group img{
+        width: 80%;
+        height: auto;
+    }
+
+    .course-categories p{
+        width: 360px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 885px){
+    .coursecategories-group{
+        display: flex;
+        gap: 30px;
+        max-width: 760px;
+    }
+    
+    .course-group img{
+        width: 80%;
+        height: auto;
+    }
+
+    .course-group .course-name{
+        font-size: 24px;
+    }
+}

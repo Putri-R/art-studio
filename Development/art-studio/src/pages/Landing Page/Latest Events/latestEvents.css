@@ -90,3 +90,42 @@ button{
 button:hover{
     background: #E4B700;
 }
+
+@media (max-width: 430px){
+    .event-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .event-group div{
+        text-align: center;
+    }
+
+    .latestevent-group{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 20px;
+        max-width: 340px;
+    }
+
+    button{
+        margin: 0px 0px 57px 0px;
+    }
+
+    .event-group a{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 885px){
+
+    .latestevent-group{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 0px;
+        max-width: 640px;
+    }
+}
