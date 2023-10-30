@@ -54,7 +54,8 @@ h2 span{
     font-size: 12px;
     font-weight: 700;
     line-height: 30px;
-}
+    width: 140px;
+} 
 
 .event-group a{
     font-family: 'Nokora';
@@ -75,7 +76,7 @@ h2 span{
     text-align: center;
 }
 
-button{
+.latestevent-button button{
     padding: 18px 38px;
     border-radius: 40px;
     border: none;
@@ -117,6 +118,10 @@ button:hover{
     .event-group a{
         font-size: 24px;
     }
+
+    .event-group .date{
+        width: auto;
+    } 
 }
 
 @media (min-width: 431px) and (max-width: 885px){

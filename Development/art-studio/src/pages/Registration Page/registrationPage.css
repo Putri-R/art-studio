@@ -14,7 +14,7 @@ h2{
     font-size: 32px;
     font-weight: 400;
     line-height: 30px;
-    margin: 78px 0px;
+    margin: 140px 0px 78px 0px;
 }
 
 h2 span{
@@ -24,7 +24,7 @@ h2 span{
 .registration-group{
     border-radius: 20px;
     background: #FC0;
-    padding: 10px 70px 50px 70px;
+    padding: 50px 70px 50px 70px;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ form input, select{
 }
 
 form select{
-    width: 580px;
+    width: 570px;
 }
 
 ::placeholder{

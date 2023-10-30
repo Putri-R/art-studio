@@ -6,6 +6,7 @@
     margin: 0 auto;
     max-width: 1124px;
     margin-bottom: 125px;
+    margin-top: 125px;
 }
 
 .event3 h2{
@@ -16,6 +17,7 @@
     font-weight: 400;
     line-height: 30px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .event3 h2 span{
@@ -31,6 +33,10 @@
     font-family: 'Nokora';
     font-size: 12px;
     font-weight: 700;
+}
+
+.date p{
+    margin-top: 20px;
 }
 
 .event3 img{

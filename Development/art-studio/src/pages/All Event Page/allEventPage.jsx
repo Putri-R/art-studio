@@ -15,7 +15,7 @@ function AllEventPage(){
 
             <div className="allevent-group">
                 <div className="event-group">
-                    <a href=""><img src={event1} alt="" /></a>
+                    <a href="/music-competition"><img src={event1} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -27,12 +27,12 @@ function AllEventPage(){
                                 </clipPath>
                             </defs>
                             </svg>  May 20, 2023</p>
-                        <a href="#">Award in Music Competition</a>
+                        <a href="/music-competition">Award in Music Competition</a>
                         <p>There was a band called "The Harmonix Five" consisting of five talented musicians, each with their own unique style and skills. The band members included Jackson, the powerful vocalist...</p>
                     </div>
                 </div>
                 <div className="event-group">
-                    <a href=""><img src={event2} alt="" /></a>
+                    <a href="/dance-competition"><img src={event2} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -44,12 +44,12 @@ function AllEventPage(){
                                 </clipPath>
                             </defs>
                             </svg>  April 12, 2023</p>
-                        <a href="#">Award in Dance Competition</a>
+                        <a href="/dance-competition">Award in Dance Competition</a>
                         <p>Caleb has successfully achieved second place for solo dance and first place for group dance along with his team...</p>
                     </div>
                 </div>
                 <div className="event-group">
-                    <a href=""><img src={event3} alt="" /></a>
+                    <a href="/painting-competition"><img src={event3} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -61,7 +61,7 @@ function AllEventPage(){
                                 </clipPath>
                             </defs>
                             </svg>  February 04, 2023</p>
-                        <a href="#">Award in Painting Competition</a>
+                        <a href="/painting-competition">Award in Painting Competition</a>
                         <p>Ava has successfully brought home the trophy for the painting competition with a theme of naturalism...</p>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ function ContactUs(){
     return(
         <>
             <Navigasi/>
-            <div>
+            <div className="contact-title">
                 <h2>Our <span>Contact</span></h2>
             </div>
 

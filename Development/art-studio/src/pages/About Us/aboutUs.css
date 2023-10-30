@@ -6,6 +6,7 @@
     margin: 0 auto;
     max-width: 1124px;
     margin-bottom: 125px;
+    margin-top: 125px;
 }
 
 .about-us h2{
@@ -16,6 +17,7 @@
     font-weight: 400;
     line-height: 30px;
     margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .about-us h2 span{

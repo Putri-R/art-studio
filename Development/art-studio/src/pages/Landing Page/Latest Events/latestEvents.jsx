@@ -1,6 +1,7 @@
 import event1 from './asset/event1_img.png';
 import event2 from './asset/event2_img.jpg';
 import event3 from './asset/event3_img.png';
+import { Link } from 'react-router-dom';
 import './latestEvents.css';
 
 function LatestEvents(){
@@ -12,7 +13,7 @@ function LatestEvents(){
 
             <div className="latestevent-group">
                 <div className="event-group">
-                    <a href=""><img src={event1} alt="" /></a>
+                    <a href="/music-competition"><img src={event1} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -24,12 +25,12 @@ function LatestEvents(){
                                 </clipPath>
                             </defs>
                             </svg>  May 20, 2023</p>
-                        <a href="#">Award in Music Competition</a>
+                        <a href="/music-competition">Award in Music Competition</a>
                         <p>There was a band called "The Harmonix Five" consisting of five talented musicians, each with their own unique style and skills. The band members included Jackson, the powerful vocalist...</p>
                     </div>
                 </div>
                 <div className="event-group">
-                    <a href=""><img src={event2} alt="" /></a>
+                    <a href="/dance-competition"><img src={event2} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -41,12 +42,12 @@ function LatestEvents(){
                                 </clipPath>
                             </defs>
                             </svg>  April 12, 2023</p>
-                        <a href="#">Award in Dance Competition</a>
+                        <a href="/dance-competition">Award in Dance Competition</a>
                         <p>Caleb has successfully achieved second place for solo dance and first place for group dance along with his team...</p>
                     </div>
                 </div>
                 <div className="event-group">
-                    <a href=""><img src={event3} alt="" /></a>
+                    <a href="/painting-competition"><img src={event3} alt="" /></a>
                     <div>
                         <p className="date"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_434_132)">
@@ -58,13 +59,14 @@ function LatestEvents(){
                                 </clipPath>
                             </defs>
                             </svg>  February 04, 2023</p>
-                        <a href="#">Award in Painting Competition</a>
+                        <a href="/painting-competition">Award in Painting Competition</a>
                         <p>Ava has successfully brought home the trophy for the painting competition with a theme of naturalism...</p>
                     </div>
                 </div>
             </div>
 
             <div className="latestevent-button">
+                <Link to="/more-event">
                 <button type="button">More Event <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <g clip-path="url(#clip0_434_166)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.06 10.9399C16.3409 11.2212 16.4987 11.6024 16.4987 11.9999C16.4987 12.3974 16.3409 12.7787 16.06 13.0599L10.404 18.7179C10.1226 18.9992 9.74101 19.1571 9.34315 19.157C8.94529 19.1569 8.56377 18.9988 8.2825 18.7174C8.00124 18.436 7.84328 18.0544 7.84338 17.6566C7.84347 17.2587 8.00161 16.8772 8.283 16.5959L12.879 11.9999L8.283 7.40391C8.00963 7.12114 7.85826 6.7423 7.86149 6.34901C7.86472 5.95571 8.0223 5.57941 8.30028 5.30117C8.57826 5.02292 8.95441 4.86499 9.3477 4.86139C9.741 4.85779 10.12 5.0088 10.403 5.28191L16.061 10.9389L16.06 10.9399Z" fill="black"/>
@@ -75,6 +77,7 @@ function LatestEvents(){
                         </clipPath>
                     </defs>
                     </svg></button>
+                </Link>
             </div>
         </>
     )

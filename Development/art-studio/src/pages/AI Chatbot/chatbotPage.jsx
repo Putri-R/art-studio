@@ -51,7 +51,7 @@ function Chatbot() {
 
       <div className="chatbot-group">
         {/* menghubungkan Form dengan useForm dan memanggil fungsi onFinish */}
-        <Form form={form} onFinish={onFinish}>
+        <Form form={form} className="chatbot-form" onFinish={onFinish}>
           {/* mengambil query/nilai input */}
           <Form.Item name="query">
             <textarea type="text" className="inputTextarea" placeholder="ex : what is naturalism in art?"/>

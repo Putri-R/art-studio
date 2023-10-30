@@ -11,8 +11,6 @@ import DanceCourse from './pages/Dance Course Page/danceCoursePage';
 import MusicCourse from './pages/Music Course Page/musicCoursePage';
 import PaintingCourse from './pages/Painting Course Page/paintingCoursePage';
 import Registration from './pages/Registration Page/registrationPage';
-import CourseCategories from './pages/Landing Page/Course Categories/courseCategories';
-import Chatbot from './pages/AI Chatbot/chatbotPage';
 
 function App() {
   return (
@@ -20,7 +18,6 @@ function App() {
       <Routes>
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/" element={<LandingPage/>} />
-        <Route path="/services" element={<CourseCategories/>}/>
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/music-competition" element={<Event1/>} />
         <Route path="/dance-competition" element={<Event2/>} />

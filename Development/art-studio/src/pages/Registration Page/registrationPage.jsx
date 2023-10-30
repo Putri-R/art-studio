@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './registrationPage.css';
 import { collection, addDoc, onSnapshot, deleteDoc, doc, updateDoc } from 'firebase/firestore';
 import db from '../../configs/registration_config';
+import Navigasi from '../../components/Navigasi/navigasi';
 
 function Registration() {
 
@@ -243,6 +244,7 @@ function Registration() {
   
   return(
     <>
+      <Navigasi/>
       <div>
           <h2>Registration <span>Form</span></h2>
       </div>

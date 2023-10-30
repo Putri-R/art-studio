@@ -17,7 +17,7 @@
     align-items: center;
     border-radius: 10px;
     background: #FC0;
-    margin: 60px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .testimony-group h2{
@@ -27,7 +27,7 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .testimony-group h2 span{

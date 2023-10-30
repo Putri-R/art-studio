@@ -2,6 +2,7 @@ import HowItWorks_img from './asset/how_it_works_logo.png'
 import book from './asset/book.png'
 import school from './asset/school.png'
 import playbutton from './asset/play_button.png'
+import { Link } from 'react-router-dom';
 import './howitworks.css'
 
 function HowItWorks(){
@@ -24,8 +25,9 @@ function HowItWorks(){
                         <p>Providing instructional videos that participants can access anytime and anywhere they need</p>
                     </div>
                 </div>
-
-                <button className="howitworks-button" type="button">Get Started</button>
+                <Link to="/registration">
+                    <button className="howitworks-button" type="button">Get Started</button>
+                </Link>
             </div>
         </>
     )

@@ -22,7 +22,7 @@ function Navigasi(){
                                 <a className="nav-link" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/services">Our Services</a>
+                                <a className="nav-link" href="/#our-services">Our Services</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/about-us">About Us</a>
