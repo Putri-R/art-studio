@@ -17,8 +17,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" exact element={<LandingPage/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
-        <Route path="/" element={<LandingPage/>} />
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/music-competition" element={<Event1/>} />
         <Route path="/dance-competition" element={<Event2/>} />
