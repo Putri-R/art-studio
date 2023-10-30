@@ -1,9 +1,11 @@
+import Navigasi from "../Navigasi/navigasi";
 import './heroPage.css';
 import hero_img from './asset/hero_image.png'
 
 function Heropage(){
     return(
         <>
+            <Navigasi/>
             <div className="hero">
                 <div className="hero_group">
                     <h1>Unleashing and nurturing the <span>great potential</span> you possess</h1>
