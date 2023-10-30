@@ -2,7 +2,7 @@ import { getFirestore } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 
 // Inisial Firebase dengan project config
-const firebaseConfig = {
+const firebaseConfigForRegistration = {
     apiKey: "AIzaSyCOVszf8u17O1tCtildPYSYFn_1UwE3cGc",
     authDomain: "art-studio---registration.firebaseapp.com",
     projectId: "art-studio---registration",
@@ -12,7 +12,7 @@ const firebaseConfig = {
     measurementId: "G-69X836W9YN"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const appRegistration = initializeApp(firebaseConfigForRegistration);
+const dbRegistration = getFirestore(appRegistration);
 
-export default db;
+export default dbRegistration;

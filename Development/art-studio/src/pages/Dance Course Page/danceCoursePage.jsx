@@ -1,5 +1,5 @@
-import Navigasi from '../components/Navigasi/navigasi';
-import Footer from '../components/Footer/footer';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 import dance_img from './asset/dance-img.png';
 import Markdown from 'react-markdown';
 import './danceCoursePage.css';

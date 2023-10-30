@@ -1,5 +1,5 @@
-import Navigasi from '../components/Navigasi/navigasi';
-import Footer from '../components/Footer/footer';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 import event3_img from './asset/event3_img.png'
 import Markdown from 'react-markdown';
 import './event3Page.css';

@@ -2,6 +2,8 @@
 import music_img from './asset/music-img.png';
 import Markdown from 'react-markdown';
 import './musicCoursePage.css';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 
 function MusicCourse(){
 
@@ -23,7 +25,7 @@ In conclusion, music courses for instruments like drums and guitars offer indivi
 
     return(
         <>
-            
+            <Navigasi/>
             <div className= "music-course">
                 <h2><span>Music</span> Course</h2>
                 <p>Discover the Rhythms of Music: Guitar and Drum</p>
@@ -33,7 +35,7 @@ In conclusion, music courses for instruments like drums and guitars offer indivi
                     <Markdown>{markdownContent}</Markdown>
                 </div>
             </div>
-            
+            <Footer/>
         </>
     )
 }

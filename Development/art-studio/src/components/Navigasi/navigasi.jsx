@@ -9,7 +9,7 @@ library.add(fab);
 function Navigasi(){
     return(
         <>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                 <div className="container d-flex">
                     <a className="navbar-brand" href="/"><img src={navbarLogo} alt="" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,20 +22,20 @@ function Navigasi(){
                                 <a className="nav-link" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Our Services</a>
+                                <a className="nav-link" href="/services">Our Services</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About Us</a>
+                                <a className="nav-link" href="/about-us">About Us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contact Us</a>
+                                <a className="nav-link" href="/contact-us">Contact Us</a>
                             </li>
                         </ul>
 
                         <div className="sosmed d-flex flex-row justify-content-center">
-                            <a className="nav-link" href="#"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
-                            <a className="nav-link" href="#"><FontAwesomeIcon className="nav-icon" icon={['fab', 'whatsapp']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
-                            <a className="nav-link" href="#"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
+                            <a className="nav-link" href="https://www.instagram.com/accounts/login/?hl=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
+                            <a className="nav-link" href="https://www.whatsapp.com/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'whatsapp']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
+                            <a className="nav-link" href="https://twitter.com/login?lang=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
                         </div>
                     </div>
                 </div>

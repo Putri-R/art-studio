@@ -1,5 +1,5 @@
-import Navigasi from '../components/Navigasi/navigasi';
-import Footer from '../components/Footer/footer';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 import Aboutus_logo from './asset/About_us_logo.png'
 import Markdown from 'react-markdown';
 import './aboutUs.css';

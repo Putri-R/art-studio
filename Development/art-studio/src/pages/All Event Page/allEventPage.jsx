@@ -2,10 +2,13 @@ import event1 from './asset/event1_img.png';
 import event2 from './asset/event2_img.jpg';
 import event3 from './asset/event3_img.png';
 import './allEventPage.css';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 
 function AllEventPage(){
     return(
         <>
+            <Navigasi/>
             <div>
                 <h2>All <span>Events</span></h2>
             </div>
@@ -63,6 +66,7 @@ function AllEventPage(){
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -2,6 +2,8 @@
 import painting_img from './asset/painting-img.png';
 import Markdown from 'react-markdown';
 import './paintingCoursePage.css';
+import Navigasi from '../../components/Navigasi/navigasi';
+import Footer from '../../components/Footer/footer';
 
 function PaintingCourse(){
 
@@ -28,7 +30,7 @@ Whether you're drawn to the raw intensity of Expressionism or the precision of N
 
     return(
         <>
-            
+            <Navigasi/>
             <div className= "painting-course">
                 <h2><span>Painting</span> Course</h2>
                 <p>Unleash Your Inner Artist</p>
@@ -38,7 +40,7 @@ Whether you're drawn to the raw intensity of Expressionism or the precision of N
                     <Markdown>{markdownContent}</Markdown>
                 </div>
             </div>
-            
+            <Footer/>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import db from '../../configs/firebase_config';
+import dbTestimony from '../../configs/firebase_config';
 import { collection, getDocs } from 'firebase/firestore';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +12,7 @@ const Testimony = () => {
     useEffect(() => {
         //mengambil data dari database testimoni dengan geDocs
         const fetchTestimonies = async () => {
-            const collectionRef = collection(db, 'testimoni');
+            const collectionRef = collection(dbTestimony, 'testimoni');
         const querySnapshot = await getDocs(collectionRef);
 
         // memperbarui state dengan array data
