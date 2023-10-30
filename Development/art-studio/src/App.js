@@ -11,6 +11,7 @@ import DanceCourse from './pages/Dance Course Page/danceCoursePage';
 import MusicCourse from './pages/Music Course Page/musicCoursePage';
 import PaintingCourse from './pages/Painting Course Page/paintingCoursePage';
 import Registration from './pages/Registration Page/registrationPage';
+import ErrorPage from './pages/404 Error Page/404Page';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/music-course" element={<MusicCourse/>} />
         <Route path="/painting-course" element={<PaintingCourse/>} />
         <Route path="/registration" element={<Registration/>} />
+        <Route path="/error-page" element={<ErrorPage/>}/>
       </Routes>
     </Router>
   );
