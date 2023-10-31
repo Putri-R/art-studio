@@ -34,7 +34,7 @@ In conclusion, Caleb's remarkable **second-place win in solo dance and first-pla
                             </clipPath>
                         </defs>
                     </svg>
-                    <p> April 12, 2023</p>
+                    <h6> April 12, 2023</h6>
                 </div>
                 <img src={event2_img} alt="" />
 

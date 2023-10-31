@@ -3,11 +3,12 @@ import painting from './asset/painting_course.png';
 import dance from './asset/dance_course.png';
 import music from './asset/music_course.png';
 import { Link } from 'react-router-dom';
+import Navigasi from '../../../components/Navigasi/navigasi';
 
 function CourseCategories(){
     return(
         <>
-        <section id="our-services">
+            <Navigasi/>
             <div className= "course-categories">
                 <h2>Couser <span>Categories</span></h2>
                 <p>Click on one of the courses to view course details and pricing</p>
@@ -33,7 +34,7 @@ function CourseCategories(){
                     <button type="button">Register Now</button>
                 </Link>
             </div>  
-        </section>    
+
         </>
     )
 }

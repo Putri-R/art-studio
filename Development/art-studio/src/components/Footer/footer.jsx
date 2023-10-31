@@ -35,9 +35,9 @@ function Footer(){
                     <div class="footer-items social-media">
                         <h6>Follow Us</h6>
                         <div className="social-media-icons">
-                            <a className="nav-link" href="https://www.instagram.com/accounts/login/?hl=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#000", fontSize: "36px" }} /></a>
+                            <a className="nav-link" href="https://www.instagram.com/accounts/login/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#000", fontSize: "36px" }} /></a>
                             <a className="nav-link" href="https://www.whatsapp.com/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'whatsapp']} style={{ color: "#000", fontSize: "36px" }} /></a>
-                            <a className="nav-link" href="https://twitter.com/login?lang=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#000", fontSize: "36px" }} /></a>
+                            <a className="nav-link" href="https://twitter.com/login/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#000", fontSize: "36px" }} /></a>
                         </div>
                     </div>
 

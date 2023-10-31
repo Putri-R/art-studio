@@ -22,7 +22,7 @@ function Navigasi(){
                                 <a className="nav-link" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/#our-services">Our Services</a>
+                                <a className="nav-link" href="/services">Our Services</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/about-us">About Us</a>
@@ -33,9 +33,9 @@ function Navigasi(){
                         </ul>
 
                         <div className="sosmed d-flex flex-row justify-content-center">
-                            <a className="nav-link" href="https://www.instagram.com/accounts/login/?hl=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
+                            <a className="nav-link" href="https://www.instagram.com/accounts/login/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'instagram']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
                             <a className="nav-link" href="https://www.whatsapp.com/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'whatsapp']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
-                            <a className="nav-link" href="https://twitter.com/login?lang=en"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
+                            <a className="nav-link" href="https://twitter.com/login/"><FontAwesomeIcon className="nav-icon" icon={['fab', 'twitter']} style={{ color: "#e49700", fontSize: "25px" }} /></a>
                         </div>
                     </div>
                 </div>

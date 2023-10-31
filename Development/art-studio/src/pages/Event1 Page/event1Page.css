@@ -35,8 +35,8 @@
     font-weight: 700;
 }
 
-.event1 .date p{
-    margin-top: 20px;
+.event1 .date h6{
+    margin-top: 12px;
 }
 
 .event1 img{

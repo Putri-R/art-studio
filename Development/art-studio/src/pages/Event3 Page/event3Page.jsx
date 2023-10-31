@@ -34,7 +34,7 @@ Ava's win in the painting competition will undoubtedly serve as an inspiration t
                             </clipPath>
                         </defs>
                     </svg>
-                    <p> February 04, 2023</p>
+                    <h6> February 04, 2023</h6>
                 </div>
                 <img src={event3_img} alt="" />
 

@@ -34,7 +34,7 @@ Winning the competition was just the beginning of a promising musical journey fo
                             </clipPath>
                         </defs>
                     </svg>
-                    <p> May 20, 2023</p>
+                    <h6> May 20, 2023</h6>
                 </div>
                 <img src={event_img} alt="" />
 

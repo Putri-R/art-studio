@@ -128,7 +128,7 @@ form button:hover{
     border-radius: 20px;
     background: #F2F2F2;
     padding: 50px;
-    width: 900px;
+    width: 1000px;
 }
 
 table th{
@@ -178,7 +178,12 @@ table td{
     border-radius: 12px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 430px){
+    .registration {
+        margin: 0px auto;
+        max-width: 400px;
+    }
+
     .registration-group form div {
         display: flex;
         flex-direction: column;
@@ -213,7 +218,7 @@ table td{
     }
 
     .registration-group2 .regis-table {
-        width: 290px;
+        width: 105%;
     }
 
     .cancelButton {
@@ -221,7 +226,7 @@ table td{
     }
 }
 
-@media (min-width: 401px) and (max-width: 840px) {
+@media (min-width: 431px) and (max-width: 885px) {
     .registration {
         margin: 0px auto;
         max-width: 700px;
@@ -237,6 +242,6 @@ table td{
     }
 
     .registration-group2 .regis-table {
-        width: 600px;
+        width: 110%;
     }
 }

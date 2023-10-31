@@ -12,6 +12,7 @@ import MusicCourse from './pages/Music Course Page/musicCoursePage';
 import PaintingCourse from './pages/Painting Course Page/paintingCoursePage';
 import Registration from './pages/Registration Page/registrationPage';
 import ErrorPage from './pages/404 Error Page/404Page';
+import CourseCategories from './pages/Landing Page/Course Categories/courseCategories';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" exact element={<LandingPage/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/about-us" element={<AboutUs/>} />
+        <Route path="/services" element={<CourseCategories/>}/>
         <Route path="/music-competition" element={<Event1/>} />
         <Route path="/dance-competition" element={<Event2/>} />
         <Route path="/painting-competition" element={<Event3/>} />
