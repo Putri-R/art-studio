@@ -31,7 +31,7 @@ h2 span{
     border-radius: 20px;
     background: #FC0;
     width: 623px;
-    height: 632px;
+    height: 650px;
     text-align: center;
 }
 
@@ -71,6 +71,7 @@ h2 span{
 
     .contact-group h3{
         font-size: 20px;
+        margin-top: 30px;
     }
 
     .contact-us img{
@@ -89,6 +90,6 @@ h2 span{
     .contact-group{
         background: #FC0;
         width: 90%;
-        height: 600px;
+        height: 650px;
     }
 }

@@ -78,7 +78,8 @@
     list-style-type: none;
 }
 
-.copyright{
+.copyright p{
+    color: #000;
     font-family: 'Nokora';
     font-size: 16px;
     font-weight: 700;
