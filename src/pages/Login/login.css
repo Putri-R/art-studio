@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+.login button{
+    border-radius: 10px;
+    background: #FC0;
+    font-family: 'Nokora';
+    padding: 10px;
+    border: none;
+}
+
+.login button:hover{
+    background: #E4B700;
+}
+
+.login{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.login-notif{
+    color: rgb(15, 115, 27);
+    font-family: 'Nokora';
+    border: none;
+    margin: 20px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.login .notif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

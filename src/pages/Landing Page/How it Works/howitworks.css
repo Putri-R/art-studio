@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Jost:wght@400;700&family=Nokora:wght@700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+.howitworks{
+    background: rgba(238, 238, 238, 1);
+    text-align: center;
+}
+
+.howitworks h2{
+    text-align: center;
+    font-family: 'Fredoka';
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 70px;
+    padding-bottom: 51px;
+}
+
+.howitworks-group2{
+    text-align: center;
+}
+
+.howitworks-group2 img{
+    width: 54px;
+    height: 54px;
+}
+
+.howitworks-group2 p{
+    color: #5E5C5C;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.howitworks-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+    margin: -50px auto;
+    max-width: 1124px;
+    padding-left: 20px;
+}
+
+.howitworks-button{
+    padding: 14px 38px;
+    border-radius: 40px;
+    border: none;
+    background: #FC0;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 400;
+    pointer-events: auto;
+    margin: 100px 0px 70px 0px;
+}
+
+.howitworks-button:hover{
+    background: #E4B700;
+}
+
+@media (max-width: 430px){
+    .howitworks-group {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: -50px auto;
+        max-width: 360px;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 885px){
+    .howitworks-group {
+        display: flex;
+        gap: 20px;
+        max-width: 680px;
+    }
+}
