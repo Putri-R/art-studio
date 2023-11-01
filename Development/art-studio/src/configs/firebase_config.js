@@ -12,7 +12,7 @@ const firebaseConfigForTestimony = {
     measurementId: "G-X572CYZPRC"
 };
 
-const appTestimony = initializeApp(firebaseConfigForTestimony);
+const appTestimony = initializeApp(firebaseConfigForTestimony, "Testimoni");
 const dbTestimony = getFirestore(appTestimony);
 
 // dbTestimony sebagai variabel referensi ke firestore
