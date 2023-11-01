@@ -25,7 +25,7 @@ function HowItWorks(){
                         <p>Providing instructional videos that participants can access anytime and anywhere they need</p>
                     </div>
                 </div>
-                <Link to="/registration">
+                <Link to="/login">
                     <button className="howitworks-button" type="button">Get Started</button>
                 </Link>
             </div>

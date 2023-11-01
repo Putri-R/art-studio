@@ -1,6 +1,7 @@
 import { getFirestore } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 
+// firebase configuration
 const firebaseConfigForTestimony = {
     apiKey: "AIzaSyBJcyKv1UpOdpbr5q2sj4c_C9MHn7clCzw",
     authDomain: "art-studio---testimoni.firebaseapp.com",
@@ -11,7 +12,8 @@ const firebaseConfigForTestimony = {
     measurementId: "G-X572CYZPRC"
 };
 
-const appTestimony = initializeApp(firebaseConfigForTestimony, "Testimoni");
+const appTestimony = initializeApp(firebaseConfigForTestimony);
 const dbTestimony = getFirestore(appTestimony);
 
+// dbTestimony sebagai variabel referensi ke firestore
 export default dbTestimony;

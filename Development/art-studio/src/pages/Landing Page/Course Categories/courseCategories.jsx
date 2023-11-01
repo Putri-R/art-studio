@@ -30,7 +30,7 @@ function CourseCategories(){
             </div>      
 
             <div className="categories-button">
-                <Link to="/registration">
+                <Link to="/login">
                     <button type="button">Register Now</button>
                 </Link>
             </div>  

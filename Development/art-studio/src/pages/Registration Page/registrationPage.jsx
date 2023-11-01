@@ -111,7 +111,7 @@ function Registration() {
     }
   };    
 
-  // validasi field form
+  // validasi field form ketika menambah data baru
   const validateForm = () => {
     const errors = {};
   
@@ -147,8 +147,9 @@ function Registration() {
     return Object.keys(errors).length === 0;
   };  
 
-  // untuk menyimpan data ke database
-  const [registrations, setRegistrations] = useState([]);
+  const [registrations, setRegistrations] = useState([]); // untuk menyimpan data ke database
+  const [regisSuccessAlert, setRegisSuccessAlert] = useState(false); // untuk menampilkan alert berhasil mendaftar
+  const [updateSuccessAlert, setUpdateSuccessAlert] = useState(false); // untuk berhasil update data (edit)
 
   // handle ketika submit
   const handleFormSubmit = async (e) => {
@@ -163,12 +164,18 @@ function Registration() {
           await updateDoc(doc(db, 'registrations', editData.id), editData);
           console.log('Data updated in database');
   
-          // Reset state editData setelah berhasil menyunting
+          // Reset state editData setelah berhasil mengedit
           setEditData({ ...formData });
+          // Menampilkan alert setelah berhasil update data
+          setUpdateSuccessAlert(true);
+
         } else {
           // Add untuk menambahkan data baru ke database
           await addDoc(collection(db, 'registrations'), formData);
           console.log('Data saved to database');
+
+          // Menampilkan alert setelah berhasil mendaftar
+          setRegisSuccessAlert(true);
         }
   
         // Reset state formulir setelah mengirim
@@ -180,27 +187,43 @@ function Registration() {
     }
   };
 
-  // untuk menonaktifkan tombol submit ketika data tida valid
+  // untuk mengatur waktu tampil alert
+  useEffect(() => {
+    if (regisSuccessAlert || updateSuccessAlert) {
+      // menampilkan alert selama 5 detik
+      const timeoutId = setTimeout(() => {
+        setRegisSuccessAlert(false);
+        setUpdateSuccessAlert(false);
+      }, 3000);
+
+      return () => {
+        // menutup alert saat timed out
+        clearTimeout(timeoutId);
+      };
+    }
+  }, [regisSuccessAlert, updateSuccessAlert]);
+
+  // untuk menonaktifkan tombol submit ketika data tidak valid
   const hasErrors = () => {
     return Object.values(errorMessages).some((message) => message !== '');
   };
-  
 
   // Mengambil data dari database saat komponen disubmit
   useEffect(() => {
-    const registrationRef = collection(db, 'registrations');
+    const registrationRef = collection(db, 'registrations'); // koneksi ke database
   
+    // menampilkan data yg disubmit (ketika add ataupun edit)
     const unsubscribe = onSnapshot(registrationRef, (querySnapshot) => {
       const registrationData = [];
       querySnapshot.forEach((doc) => {
         registrationData.push({ id: doc.id, ...doc.data() });
       });
-      setRegistrations(registrationData);
+      setRegistrations(registrationData); //memperbarui state
     });
   
     return unsubscribe;
   }, []);  
-
+  
   // handle untuk delete data di database
   const handleDelete = async (registrationId) => {
     try {
@@ -216,7 +239,7 @@ function Registration() {
       console.error('Error deleting data from database: ', error);
     }
   };
-
+  
   // untuk mengetahui status komponen sedang di mode edit atau tambah data
   const [editMode, setEditMode] = useState(false);
 
@@ -228,7 +251,7 @@ function Registration() {
     setEditMode(true);
     setEditData(registration);
 
-    setErrorMessages({});
+    setErrorMessages({}); //mengosongkan validasi field
   };
 
   // handle untuk cancel edit data
@@ -236,12 +259,12 @@ function Registration() {
     if (editMode) {
       // Mengosongkan kembali field form dan menonaktifkan mode edit
       setFormData(initialFormState);
-      setEditMode(false);
+      setEditMode(false); // keluar dari edit mode
 
       setErrorMessages({});
     }
   };  
-  
+
   return(
     <>
       <Navigasi/>
@@ -259,7 +282,8 @@ function Registration() {
               <label htmlFor="name" id="name">Name</label>
               <div className="regis-error">
                 <input type="text" id="name" value={editMode ? editData.name : formData.name} placeholder="Your name" onChange={handleFormChange}/>
-                {errorMessages.name && <div className="error-message">{errorMessages.name}</div>}
+                {/* errorMessages untuk validasi */}
+                {errorMessages.name && <div className="error-message">{errorMessages.name}</div>} 
               </div>
             </div>
             <div>
@@ -302,7 +326,7 @@ function Registration() {
               <div className="regis-error">
                 <select id="course" value={editMode ? editData.course : formData.course} name="course" onChange={handleFormChange} disabled={editMode}>
                   <option value="" disabled hidden></option>
-                  <option value="Painting Naturalism">Painting Naturalism</option>
+                  <option value="Painting - Naturalism">Painting - Naturalism</option>
                   <option value="Painting - Expressionism">Painting - Expressionism</option>
                   <option value="Music - Guitar">Music - Guitar</option>
                   <option value="Music - Drum">Music - Drum</option>
@@ -317,6 +341,18 @@ function Registration() {
               {editMode && (
                 <div className="cancelButton">
                   <button type="button" onClick={handleCancel}>Cancel</button>
+                </div>
+              )}
+            </div>
+            <div className="alert">
+              {regisSuccessAlert && (
+                <div className="enroll-alert">
+                  Thank you for enrolling in our course!
+                </div>
+              )}
+              {updateSuccessAlert && (
+                <div className="update-alert">
+                  Data updated successfully!
                 </div>
               )}
             </div>

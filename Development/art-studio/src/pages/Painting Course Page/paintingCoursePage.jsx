@@ -1,4 +1,3 @@
-
 import painting_img from './asset/painting-img.png';
 import Markdown from 'react-markdown';
 import './paintingCoursePage.css';

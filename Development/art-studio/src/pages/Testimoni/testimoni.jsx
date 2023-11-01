@@ -13,16 +13,16 @@ const Testimony = () => {
         //mengambil data dari database testimoni dengan geDocs
         const fetchTestimonies = async () => {
             const collectionRef = collection(dbTestimony, 'testimoni');
-        const querySnapshot = await getDocs(collectionRef);
+            const querySnapshot = await getDocs(collectionRef);
 
-        // memperbarui state dengan array data
-        const testimoniesArray = [];
-        querySnapshot.forEach((doc) => {
-            testimoniesArray.push(doc.data());
-        });
+            // memperbarui state dengan array data
+            const testimoniesArray = [];
+            querySnapshot.forEach((doc) => {
+                testimoniesArray.push(doc.data());
+            });
 
-        // mengubah nilai state
-        setTestimonies(testimoniesArray);
+            // mengubah nilai state
+            setTestimonies(testimoniesArray);
         };
 
         // mengambil data dari database saat ada perubahan
@@ -30,7 +30,7 @@ const Testimony = () => {
     }, []);
 
     // membagi testimoni untuk carousel menjadi 2 perkelompok
-    const testimonialsGroups = [];
+    const testimonialsGroups = []; // array kosong
     for (let i = 0; i < testimonies.length; i += 2) {
         const group = testimonies.slice(i, i + 2);
         testimonialsGroups.push(group);

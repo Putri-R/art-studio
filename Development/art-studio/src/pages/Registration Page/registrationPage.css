@@ -178,6 +178,35 @@ table td{
     border-radius: 12px;
 }
 
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enroll-alert, .update-alert {
+    background-color: #2d7626;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nokora';
+}
+
+.logout-button button{
+    padding: 10px 38px;
+    border-radius: 40px;
+    border: none;
+    background: #FC0;
+    font-family: 'Nokora';
+    font-size: 16px;
+    font-weight: 400;
+    pointer-events: auto;
+}
+
+.logout-button button:hover{
+    background: #E4B700;
+}
+
 @media (max-width: 430px){
     .registration {
         margin: 0px auto;
