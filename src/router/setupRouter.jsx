@@ -1,7 +1,9 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from '../pages/Landing Page/landingPage';
 import ContactUs from '../pages/Contact Us/contactUs';
 import AboutUs from '../pages/About Us/aboutUs';
+import CourseCategories from '../pages/Landing Page/Course Categories/courseCategories';
 import Event1 from '../pages/Event1 Page/event1Page';
 import Event2 from '../pages/Event2 Page/event2Page';
 import Event3 from '../pages/Event3 Page/event3Page';
@@ -10,9 +12,8 @@ import DanceCourse from '../pages/Dance Course Page/danceCoursePage';
 import MusicCourse from '../pages/Music Course Page/musicCoursePage';
 import PaintingCourse from '../pages/Painting Course Page/paintingCoursePage';
 import Registration from '../pages/Registration Page/registrationPage';
-import ErrorPage from '../pages/404 Error Page/404Page';
-import CourseCategories from '../pages/Landing Page/Course Categories/courseCategories';
 import Login from '../pages/Login/login';
+import ErrorPage from '../pages/404 Error Page/404Page';
 
 function SetupRouters() {
   return (
