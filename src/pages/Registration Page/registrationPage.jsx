@@ -21,15 +21,7 @@ function Registration() {
   const [formData, setFormData] = useState(initialFormState);
 
   // untuk mengelola pesan error di input
-  const [errorMessages, setErrorMessages] = useState({
-    name: '',
-    email: '',
-    address: '',
-    phone: '',
-    guardianName: '',
-    guardianPhone: '',
-    course: '',
-  });
+  const [errorMessages, setErrorMessages] = useState(initialFormState);
 
   // handle untuk perubahan data
   const handleFormChange = (e) => {
